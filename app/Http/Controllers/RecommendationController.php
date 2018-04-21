@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use Elasticsearch;
+
 use Elasticsearch\ClientBuilder;
 use MathPHP\LinearAlgebra\Vector;
-use Phpml\Metric\Accuracy;
 
 class RecommendationController extends Controller
 {
