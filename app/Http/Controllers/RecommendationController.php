@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 
 use Elasticsearch\ClientBuilder;
 use MathPHP\LinearAlgebra\Vector;
+use App\Members;
+use Illuminate\Support\Facades\Auth;
+use App\Job;
 
 class RecommendationController extends Controller
 {
@@ -210,7 +213,7 @@ class RecommendationController extends Controller
      * @return array
      * @throws \MathPHP\Exception\VectorException
      */
-    public function searchMatchingSimilarity($from_id, $from, $to, $number_return)
+    public function searchMatchingSimilarity($from_id, $from, $to, $number_return, $offset = 0)
     {
 
         $client = $this->client;
@@ -251,15 +254,21 @@ class RecommendationController extends Controller
             "id" => $from_value["_id"],
             "fields" => $field_term,
             "term_statistics" => true,
+            "body" => [
+                "filter" => [
+                    "min_doc_freq" => 2
+                ],
+            ]
         ]);
         $termvectors = $client->termvectors($params);
 
+//        dd($termvectors, $from_value);
         //Build Vector CV => Build own vector
         $handleTermVector = $this->handleTermVector($termvectors, $from, $to, $from_value);
         $terms = $handleTermVector["terms"];
         $frequent = $handleTermVector["frequent"];
         $boost_score_ownVector = $handleTermVector["boost_score"];
-
+        $own_score = $handleTermVector["score"];
 
         //Build vector term follow document
         $vectors = [];
@@ -267,12 +276,26 @@ class RecommendationController extends Controller
         $idf_docFreq = [];
         foreach($terms as $index=>$term) {
             $term = (string)$term;
+
+            //Boost
+            $boost_1 = 1;
+            $boost_2 = 1;
+            if ($to == $from) {
+                $boost_1 = 1.5;
+                $boost_2 = 1.2;
+            }
+
             if ($to=="job") {
                 $json = [
                     'query' => [
                         'bool' => [
                             'should' => [
-                                ['term' => [ 'title' => $term ]],
+                                ['term' => [
+                                    'title' => [
+                                        "value" => $term,
+                                        "boost" => $boost_1,
+                                    ]
+                                ]],
                                 ['term' => [ 'description' => $term ]]
                             ]
                         ]
@@ -283,8 +306,13 @@ class RecommendationController extends Controller
                     'query' => [
                         'bool' => [
                             'should' => [
-                                ['term' => [ 'fullname' => $term ]],
-                                ['term' => [ "summary" => $term]],
+                                ['term' => [
+                                    'fullname' => [
+                                        "value" => $term,
+                                        "boost" => $boost_2
+                                    ]
+                                ]],
+//                                ['term' => [ "summary" => $term]],
 //                                ['term' => [ 'location' => $term ]],
                                 ['term' => [ 'workExperience' => $term ]],
 //                                ['term' => [ 'education' => $term ]],
@@ -331,7 +359,16 @@ class RecommendationController extends Controller
 
 
         //Calculate score cua CV
-        $own_vc_vector = $this->calculateScore($frequent, $idf_docFreq, $count_to, $boost_score_ownVector);
+//        $own_vc_vector = $this->calculateScore($frequent, $idf_docFreq, $count_to, $boost_score_ownVector);
+        if ($from == $to) {
+            $own_vc_vector = $vectors[$from_value["_id"]];
+        } else {
+//            $own_vc_vector = $this ->calculateScore($frequent, $idf_docFreq, $count_to, $boost_score_ownVector);
+            $own_vc_vector = $this->calculateScoreVer2($own_score,$boost_score_ownVector);
+        }
+
+//        dd($from_value,$vectors["42Sg3mIBJ81XLRnFR-1y"],$vectors[$from_value["_id"]],$this->calculateScoreVer2($own_score,$boost_score_ownVector),$own_score, $handleTermVector);
+
         $result = [];
         $from_vector = new Vector($own_vc_vector);
 
@@ -346,7 +383,7 @@ class RecommendationController extends Controller
         arsort($result);
 
 //        if($to=="job")dd($result);
-        $list_top_result =  array_slice($result,0, $number_return);
+        $list_top_result =  array_slice($result,$offset, $number_return);
         $data_list_top = [];
 
         foreach ($list_top_result as $key=>$item) {
@@ -357,6 +394,7 @@ class RecommendationController extends Controller
 
         }
 
+        dd($data_list_top,$from_value, $result, $handleTermVector);
         return $data_list_top;
 
 
@@ -369,7 +407,6 @@ class RecommendationController extends Controller
 //            "id" => array_keys($result)[1]
 //        ];
 
-//        dd($client->get($params), $from_value, $result);
 
 //        file_put_contents("./result.json",json_encode($final_result));
 
@@ -396,7 +433,7 @@ class RecommendationController extends Controller
                     "query" => [
                         "multi_match" => [
                             "query" => $keyword,
-                            "fields" => ["fullname^2","headline^2",'skills','wordExperience']
+                            "fields" => ["fullname^2","headline^2",'skills^2','wordExperience']
                         ]
 
                     ]
@@ -433,12 +470,17 @@ class RecommendationController extends Controller
     public function handleTermVector($termvectors, $from, $to, $fromVector)
     {
         $result = [];
+        $boost_score = [];
         $score = [];
+        $terms = [];
+        $frequent = [];
+
         if ($from == "cv") {
             foreach ($termvectors["term_vectors"][$from]["terms"] as $key=>$item) {
                 $key = (string)$key;
                 $terms[] = $key;
                 $frequent[] = $item["term_freq"];
+                $score[] = $item["score"];
 
                 $temp_score = 1;
                 if (preg_match('/\b'.$key.'\b/',strtolower($fromVector["_source"]["fullname"])) !== 0) {
@@ -447,29 +489,32 @@ class RecommendationController extends Controller
                 else if (preg_match('/\b'.$key.'\b/',strtolower($fromVector["_source"]["skills"])) !== 0 || preg_match('/\b'.$key.'\b/',strtolower($fromVector["_source"]["workExperience"])) !== 0) {
                     $temp_score = 2;
                 }
-                $score[] = $temp_score;
+                $boost_score[] = $temp_score;
             }
         } else {
             foreach ($termvectors["term_vectors"]["description"]["terms"] as $key=>$item) {
                 $key = (string)$key;
                 $terms[] = $key;
                 $frequent[] = $item["term_freq"];
+                $score[] = $item["score"];
 
-                $score[] = 1;
+                $boost_score[] = 1;
             }
             foreach ($termvectors["term_vectors"]["title"]["terms"] as $key=>$item) {
                 $key = (string)$key;
                 if (array_search($key,$terms) !== false) {
                     $frequent[array_search($key,$terms)] += $item["term_freq"];
-                    $score[array_search($key,$terms)] = 4;
+                    $boost_score[array_search($key,$terms)] = 3;
                 } else {
                     $terms[] = $key;
                     $frequent[] = $item["term_freq"];
+                    $score[] = $item["score"];
+
                     $temp_score = 1;
                     if (preg_match('/\b'.$key.'\b/',strtolower($fromVector["_source"]["title"])) !== 0) {
-                        $temp_score = 4;
+                        $temp_score = 3;
                     }
-                    $score[] = $temp_score;
+                    $boost_score[] = $temp_score;
                 }
 
             }
@@ -477,7 +522,8 @@ class RecommendationController extends Controller
 
         $result["terms"] = $terms;
         $result["frequent"] = $frequent;
-        $result["boost_score"] = $score;
+        $result["boost_score"] = $boost_score;
+        $result["score"] = $score;
 
         return $result;
     }
@@ -507,6 +553,16 @@ class RecommendationController extends Controller
 
 
 
+    public function calculateScoreVer2($score, $boost_score)
+    {
+        $vector_return = [];
+        foreach ($score as $key=>$item) {
+
+            $temp_score = $item*$boost_score[$key];
+            $vector_return[] = $temp_score;
+        }
+        return $vector_return;
+    }
 
     /**
      * @param $term
@@ -525,7 +581,7 @@ class RecommendationController extends Controller
             }
         } else {
             if (preg_match('/\b'.$term.'\b/',strtolower($document["_source"]["title"])) !== 0) {
-                $score = 4;
+                $score = 3;
             }
         }
 
@@ -533,5 +589,54 @@ class RecommendationController extends Controller
     }
 
 
+    public function explain($from="job")
+    {
+        $my_id = Members::findorFail(Auth::id())->toArray();
+        $my_job = Job::findorFail($my_id["job_id"])->toArray();
 
+        $params_from = [
+            'index' => $from,
+            'type' => $from,
+        ];
+
+        $params_search_from = array_merge($params_from,[
+            "body" => [
+                "query" => [
+                    "bool" => [
+                        "must" => [
+                            "term" => [
+                                "id" => $my_id["job_id"]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]);
+
+        $from_value = $this->client->search($params_search_from);
+        $from_value = $from_value["hits"]["hits"][0];
+
+
+        $params = array_merge($params_from,[
+            "id" => $from_value["_id"],
+//            "analyzer" => "my_analyzer"
+            "term_statistics" => true,
+
+            "body" => [
+                "filter" => [
+                    "min_doc_freq" => 2
+                ],
+
+            ]
+
+        ]);
+        dd($this->client->termvectors($params));
+    }
+
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect(route('login'));
+    }
 }

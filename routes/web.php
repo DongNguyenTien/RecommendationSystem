@@ -13,6 +13,8 @@
 
 Route::get('/jobmatchjob','RecommendationController@matchData');
 Route::get('/matchsearch','RecommendationController@searchMatching');
+Route::get('/explain','RecommendationController@explain');
+Route::get('/logout','RecommendationController@logout');
 
 //Crawl DATA
 

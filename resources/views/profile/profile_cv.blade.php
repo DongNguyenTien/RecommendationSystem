@@ -90,7 +90,7 @@
                             <label style="font-size: 11pt;">Skill: </label><span> {{$item["skill"]}}</span>
                         </div>
                         <div>
-                            <label style="font-size: 11pt;">Experience: </label><span> {{$item["Experience"]}}</span>
+                            <label style="font-size: 11pt;">Experience: </label><span> {{$item["monthsOfExperience"]}}</span>
                         </div>
                     </div>
 

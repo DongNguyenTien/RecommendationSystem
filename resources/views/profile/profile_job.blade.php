@@ -17,7 +17,7 @@
             </div>
 
 
-            <h3 class="center-align">List recommend job</h3>
+            <h3 class="center-align">List recommend CV</h3>
 
             @foreach($list_recommend_cv as $item)
 

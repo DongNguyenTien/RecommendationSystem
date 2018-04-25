@@ -3181,3 +3181,624 @@
 127.0.0.1 - - [21/Apr/2018:19:58:16 +0700] "GET / HTTP/1.1" 500 -
 127.0.0.1 - - [21/Apr/2018:19:58:28 +0700] "GET / HTTP/1.1" 500 -
 127.0.0.1 - - [21/Apr/2018:19:58:45 +0700] "GET /profile_cv HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:19:59:39 +0700] "GET /profile_cv HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:19:59:43 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:19:59:45 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:19:59:48 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:19:59:52 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:00:12 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:00:38 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:01:20 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:01:21 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:01:40 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:01:41 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:02:01 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:02:03 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:02:21 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:02:23 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:02:42 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:02:43 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:03:03 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:03:03 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:03:20 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:03:21 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:03:22 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:03:41 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:03:42 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:03:55 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:03:56 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:03:58 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:03:59 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:04:08 +0700] "GET /mapping HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:04:11 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:04:19 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:04:20 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:05:09 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:05:11 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:06:10 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:06:11 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:06:12 +0700] "GET / HTTP/1.1" 500 -
+127.0.0.1 - - [21/Apr/2018:20:06:24 +0700] "GET / HTTP/1.1" 302 163218
+127.0.0.1 - - [21/Apr/2018:20:06:25 +0700] "GET /login HTTP/1.1" 500 164801
+127.0.0.1 - - [21/Apr/2018:20:07:08 +0700] "GET /login HTTP/1.1" 500 795006
+127.0.0.1 - - [21/Apr/2018:20:07:09 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2018:20:07:27 +0700] "GET /login HTTP/1.1" 200 4655
+127.0.0.1 - - [21/Apr/2018:20:07:28 +0700] "GET /css/signin.css HTTP/1.1" 200 629
+127.0.0.1 - - [21/Apr/2018:20:07:28 +0700] "GET /css/style.css HTTP/1.1" 200 1771
+127.0.0.1 - - [21/Apr/2018:20:07:28 +0700] "GET /icon/fonts/open-iconic.woff HTTP/1.1" 200 14984
+127.0.0.1 - - [21/Apr/2018:20:07:28 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2018:20:07:35 +0700] "GET / HTTP/1.1" 302 360
+127.0.0.1 - - [21/Apr/2018:20:07:35 +0700] "GET /login HTTP/1.1" 200 4655
+127.0.0.1 - - [21/Apr/2018:20:08:23 +0700] "GET /login HTTP/1.1" 200 2776
+127.0.0.1 - - [21/Apr/2018:20:08:24 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2018:20:08:30 +0700] "POST /login HTTP/1.1" 500 626511
+127.0.0.1 - - [21/Apr/2018:20:08:44 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:08:44 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:08:44 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:08:44 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:20:11:20 +0700] "GET /login HTTP/1.1" 200 2776
+127.0.0.1 - - [21/Apr/2018:20:11:20 +0700] "GET /css/signin.css HTTP/1.1" 304 -
+127.0.0.1 - - [21/Apr/2018:20:11:20 +0700] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [21/Apr/2018:20:11:26 +0700] "POST /login HTTP/1.1" 302 336
+127.0.0.1 - - [21/Apr/2018:20:11:27 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [21/Apr/2018:20:11:27 +0700] "GET /icon/fonts/open-iconic.woff HTTP/1.1" 304 -
+127.0.0.1 - - [21/Apr/2018:20:11:44 +0700] "GET /search_cv?keywords=javascript+developer HTTP/1.1" 200 19301
+127.0.0.1 - - [21/Apr/2018:20:11:57 +0700] "GET /search_cv?keywords=javascript HTTP/1.1" 200 18615
+127.0.0.1 - - [21/Apr/2018:20:12:10 +0700] "GET /recommend-today HTTP/1.1" 500 99493
+127.0.0.1 - - [21/Apr/2018:20:12:11 +0700] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [21/Apr/2018:22:58:33 +0700] "GET / HTTP/1.1" 302 360
+127.0.0.1 - - [21/Apr/2018:22:58:34 +0700] "GET /login HTTP/1.1" 200 2776
+127.0.0.1 - - [21/Apr/2018:22:58:34 +0700] "GET /css/signin.css HTTP/1.1" 304 -
+127.0.0.1 - - [21/Apr/2018:22:58:34 +0700] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [21/Apr/2018:22:58:34 +0700] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [21/Apr/2018:22:58:42 +0700] "POST /login HTTP/1.1" 302 336
+127.0.0.1 - - [21/Apr/2018:22:58:43 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [21/Apr/2018:22:58:43 +0700] "GET /icon/fonts/open-iconic.woff HTTP/1.1" 304 -
+127.0.0.1 - - [21/Apr/2018:22:58:46 +0700] "GET /profile_cv HTTP/1.1" 500 750940
+127.0.0.1 - - [21/Apr/2018:22:59:19 +0700] "GET /profile_job HTTP/1.1" 200 11885
+127.0.0.1 - - [21/Apr/2018:22:59:38 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:22:59:38 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:22:59:38 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:22:59:38 +0700] "-" 408 -
+127.0.0.1 - - [21/Apr/2018:22:59:38 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:00:32:16 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [22/Apr/2018:00:32:16 +0700] "GET /css/signin.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2018:00:32:16 +0700] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2018:00:32:16 +0700] "GET /icon/fonts/open-iconic.woff HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2018:00:32:17 +0700] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [22/Apr/2018:00:32:22 +0700] "GET /profile_cv HTTP/1.1" 500 750958
+127.0.0.1 - - [22/Apr/2018:00:32:36 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:00:32:36 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:00:33:31 +0700] "GET /profile_cv HTTP/1.1" 500 20594
+127.0.0.1 - - [22/Apr/2018:00:33:33 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:00:33:51 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:00:33:51 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:00:33:51 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:00:33:51 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:00:34:31 +0700] "GET /profile_cv HTTP/1.1" 200 22207
+127.0.0.1 - - [22/Apr/2018:00:34:32 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:00:34:51 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:00:34:51 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:00:34:51 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:00:34:51 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:22:57:17 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [22/Apr/2018:22:57:17 +0700] "GET /bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140421
+127.0.0.1 - - [22/Apr/2018:22:57:18 +0700] "GET /css/signin.css HTTP/1.1" 200 629
+127.0.0.1 - - [22/Apr/2018:22:57:19 +0700] "GET /css/style.css HTTP/1.1" 200 1771
+127.0.0.1 - - [22/Apr/2018:22:57:19 +0700] "GET /materialize/css/materialize.min.css HTTP/1.1" 200 141312
+127.0.0.1 - - [22/Apr/2018:22:57:20 +0700] "GET /icon/css/open-iconic-bootstrap.css HTTP/1.1" 200 11396
+127.0.0.1 - - [22/Apr/2018:22:57:20 +0700] "GET /materialize/js/materialize.min.js HTTP/1.1" 200 179180
+127.0.0.1 - - [22/Apr/2018:22:57:20 +0700] "GET /icon/fonts/open-iconic.woff HTTP/1.1" 200 14984
+127.0.0.1 - - [22/Apr/2018:22:57:20 +0700] "GET /bootstrap/js/bootstrap.min.js HTTP/1.1" 200 50676
+127.0.0.1 - - [22/Apr/2018:22:57:20 +0700] "GET /image.jpg HTTP/1.1" 200 81539
+127.0.0.1 - - [22/Apr/2018:22:57:20 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:22:57:26 +0700] "GET /explain HTTP/1.1" 500 672447
+127.0.0.1 - - [22/Apr/2018:22:57:46 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:22:57:46 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:22:57:46 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:22:57:46 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:22:57:46 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:22:57:50 +0700] "GET /explain HTTP/1.1" 500 672804
+127.0.0.1 - - [22/Apr/2018:22:57:51 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:22:57:52 +0700] "GET /explain HTTP/1.1" 500 672808
+127.0.0.1 - - [22/Apr/2018:22:57:52 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:22:57:53 +0700] "GET /explain HTTP/1.1" 500 672832
+127.0.0.1 - - [22/Apr/2018:22:57:54 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:22:58:10 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:22:58:13 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:22:58:38 +0700] "GET /explain HTTP/1.1" 500 15832
+127.0.0.1 - - [22/Apr/2018:22:58:39 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:22:58:40 +0700] "GET /explain HTTP/1.1" 500 667476
+127.0.0.1 - - [22/Apr/2018:22:58:41 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:22:58:41 +0700] "GET /explain HTTP/1.1" 500 667470
+127.0.0.1 - - [22/Apr/2018:22:58:42 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:22:59:11 +0700] "GET /explain HTTP/1.1" 500 667474
+127.0.0.1 - - [22/Apr/2018:22:59:12 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:22:59:27 +0700] "GET /explain HTTP/1.1" 500 665871
+127.0.0.1 - - [22/Apr/2018:22:59:27 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:22:59:28 +0700] "GET /explain HTTP/1.1" 500 665830
+127.0.0.1 - - [22/Apr/2018:22:59:28 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:22:59:48 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:02:27 +0700] "GET /explain HTTP/1.1" 500 16400
+127.0.0.1 - - [22/Apr/2018:23:02:27 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:02:47 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:04:08 +0700] "GET /explain HTTP/1.1" 500 40238
+127.0.0.1 - - [22/Apr/2018:23:04:08 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:04:30 +0700] "GET /explain HTTP/1.1" 500 40237
+127.0.0.1 - - [22/Apr/2018:23:04:30 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:04:31 +0700] "GET /explain HTTP/1.1" 500 40237
+127.0.0.1 - - [22/Apr/2018:23:04:31 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:04:51 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:13:39 +0700] "GET /explain HTTP/1.1" 500 616685
+127.0.0.1 - - [22/Apr/2018:23:13:40 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:13:59 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:14:29 +0700] "GET /explain HTTP/1.1" 500 616944
+127.0.0.1 - - [22/Apr/2018:23:14:30 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:14:31 +0700] "GET /explain HTTP/1.1" 500 616940
+127.0.0.1 - - [22/Apr/2018:23:14:31 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:14:43 +0700] "GET /explain HTTP/1.1" 500 616962
+127.0.0.1 - - [22/Apr/2018:23:14:44 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:14:46 +0700] "GET /explain HTTP/1.1" 500 29761
+127.0.0.1 - - [22/Apr/2018:23:14:46 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:15:06 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:15:17 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [22/Apr/2018:23:15:27 +0700] "GET /profile_cv HTTP/1.1" 200 22207
+127.0.0.1 - - [22/Apr/2018:23:15:37 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:16:06 +0700] "GET /profile_cv HTTP/1.1" 200 20249
+127.0.0.1 - - [22/Apr/2018:23:16:07 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:16:11 +0700] "GET /explain HTTP/1.1" 500 29761
+127.0.0.1 - - [22/Apr/2018:23:16:22 +0700] "GET /explain HTTP/1.1" 500 29759
+127.0.0.1 - - [22/Apr/2018:23:16:22 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:16:42 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:16:42 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:16:46 +0700] "GET /explain HTTP/1.1" 500 30235
+127.0.0.1 - - [22/Apr/2018:23:16:46 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:17:06 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:21:43 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [22/Apr/2018:23:21:44 +0700] "GET /profile_cv HTTP/1.1" 200 20249
+127.0.0.1 - - [22/Apr/2018:23:22:01 +0700] "GET /profile_job HTTP/1.1" 200 21441
+127.0.0.1 - - [22/Apr/2018:23:22:27 +0700] "GET /profile_job HTTP/1.1" 200 19344
+127.0.0.1 - - [22/Apr/2018:23:22:28 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:22:31 +0700] "GET /profile_job HTTP/1.1" 200 19344
+127.0.0.1 - - [22/Apr/2018:23:22:32 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:22:33 +0700] "GET /profile_job HTTP/1.1" 200 19344
+127.0.0.1 - - [22/Apr/2018:23:22:34 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:22:41 +0700] "GET /profile_cv HTTP/1.1" 200 20249
+127.0.0.1 - - [22/Apr/2018:23:22:43 +0700] "GET /profile_job HTTP/1.1" 200 19344
+127.0.0.1 - - [22/Apr/2018:23:23:36 +0700] "GET /profile_cv HTTP/1.1" 200 20249
+127.0.0.1 - - [22/Apr/2018:23:23:36 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:23:37 +0700] "GET /profile_cv HTTP/1.1" 200 20249
+127.0.0.1 - - [22/Apr/2018:23:23:37 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:23:39 +0700] "GET /profile_job HTTP/1.1" 500 42022
+127.0.0.1 - - [22/Apr/2018:23:23:39 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:23:56 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:24:18 +0700] "GET /profile_job HTTP/1.1" 500 653500
+127.0.0.1 - - [22/Apr/2018:23:24:20 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:24:24 +0700] "GET /profile_job HTTP/1.1" 500 653570
+127.0.0.1 - - [22/Apr/2018:23:24:25 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:24:55 +0700] "GET /profile_job HTTP/1.1" 500 653562
+127.0.0.1 - - [22/Apr/2018:23:24:57 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:24:57 +0700] "GET /profile_job HTTP/1.1" 500 114416
+127.0.0.1 - - [22/Apr/2018:23:24:58 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:25:12 +0700] "GET /profile_job HTTP/1.1" 500 114420
+127.0.0.1 - - [22/Apr/2018:23:25:13 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:25:14 +0700] "GET /profile_job HTTP/1.1" 500 161512
+127.0.0.1 - - [22/Apr/2018:23:25:15 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:26:29 +0700] "GET /profile_job HTTP/1.1" 500 161512
+127.0.0.1 - - [22/Apr/2018:23:26:30 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:26:32 +0700] "GET /profile_job HTTP/1.1" 500 177300
+127.0.0.1 - - [22/Apr/2018:23:26:33 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:27:19 +0700] "GET /profile_cv HTTP/1.1" 500 182768
+127.0.0.1 - - [22/Apr/2018:23:27:39 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:27:42 +0700] "GET /profile_job HTTP/1.1" 500 177304
+127.0.0.1 - - [22/Apr/2018:23:29:16 +0700] "GET /profile_job HTTP/1.1" 500 177300
+127.0.0.1 - - [22/Apr/2018:23:29:17 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:29:18 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [22/Apr/2018:23:29:29 +0700] "GET /search_cv?keywords=PHP+Developer+We+are+currently+recruiting+for+a+talented+and+passionate+full+stack+developer+to+enhance+my+clients+existing+team.+Working+within+a+small+team+of+enthusiastic%2C+passionate%2C+creative+and+like-minded+developers+using+cutting-edge+technologies+to+deliver+well-crafted%2C+state-of-the-art+solutions+to+a+wide+variety+of+clients.You+will+be+a+key+player+and+have+the+creative+freedom+to+use+the+best+and+most+appropriate+tools+available%2C+which+will+allow+us+to+continue+to+supply+excellence+and+achieve+our+ambitious+goals+whilst+allowing+you+to+develop+your+skill+sets.Requirements%3AAt+least+2+years+professional+experience+in+PHPGood+knowledge+of+OOP+conceptsTest+Driven+Development+in+PHPExperience+with+CSS+%28Sass%29+and+HTML5Passionate+about+what+you+doWilling+to+learnOpen+to+new+ideasMust+hold+a+UK+driving+licenseYou%E2%80%99ll+be+expected+to+collaborate%2C+brainstorm+and+explore+ideas+with+the+team+to+find+the+ideal+solution%2C+whilst+working+on+a+variety+of+projects.Full+training+is+provided+as+necessary.About+you%3AFriendly+and+like+to+help+people+-+You+love+learning+and+you%27re+curious+about+what%E2%80%99s+around+youYou%27re+passionate+and+enthusiastic%E2%80%AF+-+You%27re+an+advocate+for+design+thinking+and+best+user+experienceYou+care+about+writing+readable+and+well-structured+codeOn+a+day-to-day+basis+you+will%3AWork+as+part+of+a+small+team+composed+mostly+by+developers+and+designers.Create+new+products+for+our+wide+range+of+clients.Research+and+improve+the+productivity+of+the+team+by+introducing+new+tools+and+processes.Skills%2Fenvironments+you+will+gain+further+experience+of%3AExperience+with+Front+End+development%2C+we+use+React+and+Redux.Understanding+of+functional+programming+and+what+problems+it+solves.AWS+and+Linux+Servers+knowledge.Serverless+framework+%28we+use+AWS+Lambda+for+many+problems%29Understanding+of+RubyKnowledge%2Finterest+in+different+languagesJob+Types%3A+Full-time%2C+PermanentSalary%3A+%C2%A325%2C000.00+to+%C2%A335%2C000.00+%2FyearExperience%3APHP%3A+1+year+%28Required%29 HTTP/1.1" 200 22078
+127.0.0.1 - - [22/Apr/2018:23:29:53 +0700] "GET /search_cv?keywords=PHP+Developer+We+are+currently+recruiting+for+a+talented+and+passionate+full+stack+developer+to+enhance+my+clients+existing+team.+Working+within+a+small+team+of+enthusiastic%2C+passionate%2C+creative+and+like-minded+developers+using+cutting-edge+technologies+to+deliver+well-crafted%2C+state-of-the-art+solutions+to+a+wide+variety+of+clients.You+will+be+a+key+player+and+have+the+creative+freedom+to+use+the+best+and+most+appropriate+tools+available%2C+which+will+allow+us+to+continue+to+supply+excellence+and+achieve+our+ambitious+goals+whilst+allowing+you+to+develop+your+skill+sets.Requirements%3AAt+least+2+years+professional+experience+in+PHPGood+knowledge+of+OOP+conceptsTest+Driven+Development+in+PHPExperience+with+CSS+%28Sass%29+and+HTML5Passionate+about+what+you+doWilling+to+learnOpen+to+new+ideasMust+hold+a+UK+driving+licenseYou%E2%80%99ll+be+expected+to+collaborate%2C+brainstorm+and+explore+ideas+with+the+team+to+find+the+ideal+solution%2C+whilst+working+on+a+variety+of+projects.Full+training+is+provided+as+necessary.About+you%3AFriendly+and+like+to+help+people+-+You+love+learning+and+you%27re+curious+about+what%E2%80%99s+around+youYou%27re+passionate+and+enthusiastic%E2%80%AF+-+You%27re+an+advocate+for+design+thinking+and+best+user+experienceYou+care+about+writing+readable+and+well-structured+codeOn+a+day-to-day+basis+you+will%3AWork+as+part+of+a+small+team+composed+mostly+by+developers+and+designers.Create+new+products+for+our+wide+range+of+clients.Research+and+improve+the+productivity+of+the+team+by+introducing+new+tools+and+processes.Skills%2Fenvironments+you+will+gain+further+experience+of%3AExperience+with+Front+End+development%2C+we+use+React+and+Redux.Understanding+of+functional+programming+and+what+problems+it+solves.AWS+and+Linux+Servers+knowledge.Serverless+framework+%28we+use+AWS+Lambda+for+many+problems%29Understanding+of+RubyKnowledge%2Finterest+in+different+languagesJob+Types%3A+Full-time%2C+PermanentSalary%3A+%C2%A325%2C000.00+to+%C2%A335%2C000.00+%2FyearExperience%3APHP%3A+1+year+%28Required%29 HTTP/1.1" 200 22078
+127.0.0.1 - - [22/Apr/2018:23:29:53 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:29:57 +0700] "GET /search_cv?keywords=PHP+Developer+We+are+currently+recruiting+for+a+talented+and+passionate+full+stack+developer+to+enhance+my+clients+existing+team.+Working+within+a+small+team+of+enthusiastic%2C+passionate%2C+creative+and+like-minded+developers+using+cutting-edge+technologies+to+deliver+well-crafted%2C+state-of-the-art+solutions+to+a+wide+variety+of+clients.You+will+be+a+key+player+and+have+the+creative+freedom+to+use+the+best+and+most+appropriate+tools+available%2C+which+will+allow+us+to+continue+to+supply+excellence+and+achieve+our+ambitious+goals+whilst+allowing+you+to+develop+your+skill+sets.Requirements%3AAt+least+2+years+professional+experience+in+PHPGood+knowledge+of+OOP+conceptsTest+Driven+Development+in+PHPExperience+with+CSS+%28Sass%29+and+HTML5Passionate+about+what+you+doWilling+to+learnOpen+to+new+ideasMust+hold+a+UK+driving+licenseYou%E2%80%99ll+be+expected+to+collaborate%2C+brainstorm+and+explore+ideas+with+the+team+to+find+the+ideal+solution%2C+whilst+working+on+a+variety+of+projects.Full+training+is+provided+as+necessary.About+you%3AFriendly+and+like+to+help+people+-+You+love+learning+and+you%27re+curious+about+what%E2%80%99s+around+youYou%27re+passionate+and+enthusiastic%E2%80%AF+-+You%27re+an+advocate+for+design+thinking+and+best+user+experienceYou+care+about+writing+readable+and+well-structured+codeOn+a+day-to-day+basis+you+will%3AWork+as+part+of+a+small+team+composed+mostly+by+developers+and+designers.Create+new+products+for+our+wide+range+of+clients.Research+and+improve+the+productivity+of+the+team+by+introducing+new+tools+and+processes.Skills%2Fenvironments+you+will+gain+further+experience+of%3AExperience+with+Front+End+development%2C+we+use+React+and+Redux.Understanding+of+functional+programming+and+what+problems+it+solves.AWS+and+Linux+Servers+knowledge.Serverless+framework+%28we+use+AWS+Lambda+for+many+problems%29Understanding+of+RubyKnowledge%2Finterest+in+different+languagesJob+Types%3A+Full-time%2C+PermanentSalary%3A+%C2%A325%2C000.00+to+%C2%A335%2C000.00+%2FyearExperience%3APHP%3A+1+year+%28Required%29 HTTP/1.1" 200 22078
+127.0.0.1 - - [22/Apr/2018:23:29:57 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:30:13 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:30:13 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:30:13 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:30:13 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:31:51 +0700] "GET /profile_cv HTTP/1.1" 500 182768
+127.0.0.1 - - [22/Apr/2018:23:31:57 +0700] "GET /profile_job HTTP/1.1" 500 177302
+127.0.0.1 - - [22/Apr/2018:23:32:16 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:32:16 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:33:09 +0700] "GET /profile_job HTTP/1.1" 500 177298
+127.0.0.1 - - [22/Apr/2018:23:33:10 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:33:16 +0700] "GET /profile_job HTTP/1.1" 500 177300
+127.0.0.1 - - [22/Apr/2018:23:33:16 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:33:33 +0700] "GET /profile_job HTTP/1.1" 500 140953
+127.0.0.1 - - [22/Apr/2018:23:33:33 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:34:14 +0700] "GET /profile_job HTTP/1.1" 500 132794
+127.0.0.1 - - [22/Apr/2018:23:34:14 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:34:17 +0700] "GET /profile_job HTTP/1.1" 500 132794
+127.0.0.1 - - [22/Apr/2018:23:34:17 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:35:39 +0700] "GET /profile_job HTTP/1.1" 500 30280
+127.0.0.1 - - [22/Apr/2018:23:35:40 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:36:00 +0700] "GET /profile_job HTTP/1.1" 500 30280
+127.0.0.1 - - [22/Apr/2018:23:36:01 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:36:02 +0700] "GET /profile_job HTTP/1.1" 500 33931
+127.0.0.1 - - [22/Apr/2018:23:36:02 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:36:12 +0700] "GET /profile_job HTTP/1.1" 500 33931
+127.0.0.1 - - [22/Apr/2018:23:36:12 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:36:13 +0700] "GET /profile_job HTTP/1.1" 500 30280
+127.0.0.1 - - [22/Apr/2018:23:36:13 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:43:17 +0700] "GET /profile_job HTTP/1.1" 500 30280
+127.0.0.1 - - [22/Apr/2018:23:43:17 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:43:23 +0700] "GET /profile_job HTTP/1.1" 500 30278
+127.0.0.1 - - [22/Apr/2018:23:43:23 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:43:24 +0700] "GET /profile_job HTTP/1.1" 500 651210
+127.0.0.1 - - [22/Apr/2018:23:43:25 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:43:46 +0700] "GET /profile_job HTTP/1.1" 500 651220
+127.0.0.1 - - [22/Apr/2018:23:43:47 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:43:47 +0700] "GET /profile_job HTTP/1.1" 500 651200
+127.0.0.1 - - [22/Apr/2018:23:43:48 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:43:49 +0700] "GET /profile_job HTTP/1.1" 500 651270
+127.0.0.1 - - [22/Apr/2018:23:43:49 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:44:51 +0700] "GET /profile_job HTTP/1.1" 500 650894
+127.0.0.1 - - [22/Apr/2018:23:44:51 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:44:52 +0700] "GET /profile_job HTTP/1.1" 500 17667
+127.0.0.1 - - [22/Apr/2018:23:44:52 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:45:17 +0700] "GET /profile_job HTTP/1.1" 500 17665
+127.0.0.1 - - [22/Apr/2018:23:45:18 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:45:18 +0700] "GET /profile_job HTTP/1.1" 500 133947
+127.0.0.1 - - [22/Apr/2018:23:45:19 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:46:15 +0700] "GET /recommend-today HTTP/1.1" 500 148432
+127.0.0.1 - - [22/Apr/2018:23:46:35 +0700] "-" 408 -
+127.0.0.1 - - [22/Apr/2018:23:47:08 +0700] "GET /recommend-today HTTP/1.1" 500 148430
+127.0.0.1 - - [22/Apr/2018:23:47:09 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:47:11 +0700] "GET /recommend-today HTTP/1.1" 500 148670
+127.0.0.1 - - [22/Apr/2018:23:47:12 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:47:16 +0700] "GET /recommend-today HTTP/1.1" 500 148672
+127.0.0.1 - - [22/Apr/2018:23:47:17 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:47:17 +0700] "GET /recommend-today HTTP/1.1" 500 148430
+127.0.0.1 - - [22/Apr/2018:23:47:18 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:47:43 +0700] "GET /recommend-today HTTP/1.1" 500 148426
+127.0.0.1 - - [22/Apr/2018:23:47:43 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:47:44 +0700] "GET /recommend-today HTTP/1.1" 500 78284
+127.0.0.1 - - [22/Apr/2018:23:47:44 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:47:53 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [22/Apr/2018:23:48:04 +0700] "GET /search_job?keywords=c%2C+c%2B%2B HTTP/1.1" 200 33096
+127.0.0.1 - - [22/Apr/2018:23:48:09 +0700] "GET /recommend-today HTTP/1.1" 500 639942
+127.0.0.1 - - [22/Apr/2018:23:49:16 +0700] "GET /recommend-today HTTP/1.1" 500 640272
+127.0.0.1 - - [22/Apr/2018:23:49:17 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:49:18 +0700] "GET /recommend-today HTTP/1.1" 500 35180
+127.0.0.1 - - [22/Apr/2018:23:49:19 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:49:29 +0700] "GET /recommend-today HTTP/1.1" 500 640199
+127.0.0.1 - - [22/Apr/2018:23:49:30 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:50:19 +0700] "GET /recommend-today HTTP/1.1" 500 640237
+127.0.0.1 - - [22/Apr/2018:23:50:20 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:50:21 +0700] "GET /recommend-today HTTP/1.1" 500 263148
+127.0.0.1 - - [22/Apr/2018:23:50:22 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:50:51 +0700] "GET /recommend-today HTTP/1.1" 500 263146
+127.0.0.1 - - [22/Apr/2018:23:50:52 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:50:52 +0700] "GET /recommend-today HTTP/1.1" 500 280810
+127.0.0.1 - - [22/Apr/2018:23:50:53 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:51:20 +0700] "GET /recommend-today HTTP/1.1" 500 280810
+127.0.0.1 - - [22/Apr/2018:23:51:21 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:51:22 +0700] "GET /recommend-today HTTP/1.1" 500 640185
+127.0.0.1 - - [22/Apr/2018:23:51:23 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:52:25 +0700] "GET /recommend-today HTTP/1.1" 500 640209
+127.0.0.1 - - [22/Apr/2018:23:52:26 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:52:39 +0700] "GET /recommend-today HTTP/1.1" 500 640254
+127.0.0.1 - - [22/Apr/2018:23:52:40 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:52:40 +0700] "GET /recommend-today HTTP/1.1" 500 383392
+127.0.0.1 - - [22/Apr/2018:23:52:41 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:53:07 +0700] "GET /recommend-today HTTP/1.1" 500 383396
+127.0.0.1 - - [22/Apr/2018:23:53:08 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:53:09 +0700] "GET /recommend-today HTTP/1.1" 500 30267
+127.0.0.1 - - [22/Apr/2018:23:53:09 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:53:47 +0700] "GET /recommend-today HTTP/1.1" 500 30265
+127.0.0.1 - - [22/Apr/2018:23:53:47 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:53:48 +0700] "GET /recommend-today HTTP/1.1" 500 35953
+127.0.0.1 - - [22/Apr/2018:23:53:48 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:55:08 +0700] "GET /recommend-today HTTP/1.1" 500 35953
+127.0.0.1 - - [22/Apr/2018:23:55:08 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:55:09 +0700] "GET /recommend-today HTTP/1.1" 500 69103
+127.0.0.1 - - [22/Apr/2018:23:55:10 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:57:11 +0700] "GET /recommend-today HTTP/1.1" 500 69103
+127.0.0.1 - - [22/Apr/2018:23:57:12 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:57:13 +0700] "GET /recommend-today HTTP/1.1" 500 72757
+127.0.0.1 - - [22/Apr/2018:23:57:14 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:58:02 +0700] "GET /recommend-today HTTP/1.1" 500 72757
+127.0.0.1 - - [22/Apr/2018:23:58:03 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:58:09 +0700] "GET /recommend-today HTTP/1.1" 500 659857
+127.0.0.1 - - [22/Apr/2018:23:58:09 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:59:07 +0700] "GET /recommend-today HTTP/1.1" 500 60770
+127.0.0.1 - - [22/Apr/2018:23:59:08 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:59:35 +0700] "GET /profile_cv HTTP/1.1" 200 32753
+127.0.0.1 - - [22/Apr/2018:23:59:53 +0700] "GET /profile_cv HTTP/1.1" 200 32753
+127.0.0.1 - - [22/Apr/2018:23:59:53 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [22/Apr/2018:23:59:55 +0700] "GET /profile_cv HTTP/1.1" 500 62073
+127.0.0.1 - - [22/Apr/2018:23:59:55 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:00:00:05 +0700] "GET /profile_job HTTP/1.1" 500 63801
+127.0.0.1 - - [23/Apr/2018:00:00:25 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:00:00:25 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:00:00:25 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:00:00:25 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:00:01:06 +0700] "GET /recommend-today HTTP/1.1" 500 64422
+127.0.0.1 - - [23/Apr/2018:00:01:12 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [23/Apr/2018:00:01:21 +0700] "GET /search_job?keywords=manager+website HTTP/1.1" 200 35200
+127.0.0.1 - - [23/Apr/2018:00:01:28 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [23/Apr/2018:00:01:35 +0700] "GET /search_job?keywords=administrator HTTP/1.1" 200 27721
+127.0.0.1 - - [23/Apr/2018:00:01:38 +0700] "GET /recommend-today HTTP/1.1" 500 62134
+127.0.0.1 - - [23/Apr/2018:09:34:41 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [23/Apr/2018:09:34:41 +0700] "GET /css/signin.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:09:34:41 +0700] "GET /bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:09:34:42 +0700] "GET /materialize/css/materialize.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:09:34:42 +0700] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:09:34:43 +0700] "GET /icon/css/open-iconic-bootstrap.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:09:34:43 +0700] "GET /materialize/js/materialize.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:09:34:43 +0700] "GET /bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:09:34:43 +0700] "GET /image.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:09:34:43 +0700] "GET /icon/fonts/open-iconic.woff HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:09:34:43 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:34:45 +0700] "GET /recommend-today HTTP/1.1" 500 646556
+127.0.0.1 - - [23/Apr/2018:09:35:00 +0700] "GET /recommend-today HTTP/1.1" 500 19069
+127.0.0.1 - - [23/Apr/2018:09:35:00 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:35:20 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:35:20 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:35:20 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:35:20 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:35:25 +0700] "GET /recommend-today HTTP/1.1" 500 31421
+127.0.0.1 - - [23/Apr/2018:09:35:25 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:35:33 +0700] "GET /recommend-today HTTP/1.1" 500 31421
+127.0.0.1 - - [23/Apr/2018:09:35:33 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:37:43 +0700] "GET /recommend-today HTTP/1.1" 500 47024
+127.0.0.1 - - [23/Apr/2018:09:37:44 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:38:10 +0700] "GET /recommend-today HTTP/1.1" 500 35327
+127.0.0.1 - - [23/Apr/2018:09:38:11 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:39:59 +0700] "GET /recommend-today HTTP/1.1" 500 864360
+127.0.0.1 - - [23/Apr/2018:09:40:00 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:40:12 +0700] "GET /recommend-today HTTP/1.1" 500 76741
+127.0.0.1 - - [23/Apr/2018:09:40:12 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:40:32 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:40:32 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:40:33 +0700] "GET /recommend-today HTTP/1.1" 500 143295
+127.0.0.1 - - [23/Apr/2018:09:40:34 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:40:53 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:40:53 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:41:00 +0700] "GET /search_cv?keywords=laravel HTTP/1.1" 200 11742
+127.0.0.1 - - [23/Apr/2018:09:41:06 +0700] "GET /recommend-today HTTP/1.1" 500 130448
+127.0.0.1 - - [23/Apr/2018:09:41:06 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:41:26 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:41:55 +0700] "GET /recommend-today HTTP/1.1" 500 132352
+127.0.0.1 - - [23/Apr/2018:09:41:56 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:42:15 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:43:01 +0700] "GET /search_job?keywords=laravel HTTP/1.1" 200 25131
+127.0.0.1 - - [23/Apr/2018:09:43:10 +0700] "GET /recommend-today HTTP/1.1" 500 182017
+127.0.0.1 - - [23/Apr/2018:09:43:11 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:43:30 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:43:30 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:43:30 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:43:30 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:46:10 +0700] "GET /recommend-today HTTP/1.1" 500 32070
+127.0.0.1 - - [23/Apr/2018:09:46:11 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:46:30 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:46:30 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:46:30 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:47:49 +0700] "GET /recommend-today HTTP/1.1" 500 48101
+127.0.0.1 - - [23/Apr/2018:09:47:49 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:48:34 +0700] "GET /recommend-today HTTP/1.1" 500 65823
+127.0.0.1 - - [23/Apr/2018:09:48:34 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:50:46 +0700] "GET /recommend-today HTTP/1.1" 500 81884
+127.0.0.1 - - [23/Apr/2018:09:50:46 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:51:06 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:52:03 +0700] "GET /recommend-today HTTP/1.1" 500 65825
+127.0.0.1 - - [23/Apr/2018:09:52:04 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:52:05 +0700] "GET /recommend-today HTTP/1.1" 500 65827
+127.0.0.1 - - [23/Apr/2018:09:52:05 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:52:25 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:53:15 +0700] "GET /recommend-today HTTP/1.1" 500 65825
+127.0.0.1 - - [23/Apr/2018:09:53:16 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:53:36 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:55:36 +0700] "GET /recommend-today HTTP/1.1" 500 79890
+127.0.0.1 - - [23/Apr/2018:09:55:36 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:55:56 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:56:50 +0700] "GET /recommend-today HTTP/1.1" 500 98051
+127.0.0.1 - - [23/Apr/2018:09:56:50 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:09:57:10 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:09:58:51 +0700] "GET /recommend-today HTTP/1.1" 500 98602
+127.0.0.1 - - [23/Apr/2018:09:58:52 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:00:50 +0700] "GET /recommend-today HTTP/1.1" 500 31648
+127.0.0.1 - - [23/Apr/2018:10:00:51 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:01:10 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:10:01:15 +0700] "GET /recommend-today HTTP/1.1" 500 98600
+127.0.0.1 - - [23/Apr/2018:10:01:16 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:01:35 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:10:02:56 +0700] "GET /recommend-today HTTP/1.1" 500 31648
+127.0.0.1 - - [23/Apr/2018:10:02:56 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:03:16 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:10:03:21 +0700] "GET /recommend-today HTTP/1.1" 500 50358
+127.0.0.1 - - [23/Apr/2018:10:03:21 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:03:41 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:10:04:31 +0700] "GET /recommend-today HTTP/1.1" 500 52357
+127.0.0.1 - - [23/Apr/2018:10:04:31 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:04:32 +0700] "GET /recommend-today HTTP/1.1" 500 52357
+127.0.0.1 - - [23/Apr/2018:10:04:32 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:04:52 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:10:04:55 +0700] "GET /recommend-today HTTP/1.1" 500 100491
+127.0.0.1 - - [23/Apr/2018:10:04:55 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:05:15 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:10:05:39 +0700] "GET /recommend-today HTTP/1.1" 500 202846
+127.0.0.1 - - [23/Apr/2018:10:05:40 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:05:59 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:10:06:44 +0700] "GET /recommend-today HTTP/1.1" 500 100495
+127.0.0.1 - - [23/Apr/2018:10:06:44 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:07:04 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:10:07:17 +0700] "GET /recommend-today HTTP/1.1" 500 202850
+127.0.0.1 - - [23/Apr/2018:10:07:17 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:07:32 +0700] "GET /recommend-today HTTP/1.1" 500 118510
+127.0.0.1 - - [23/Apr/2018:10:07:32 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:07:52 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:10:09:03 +0700] "GET /recommend-today HTTP/1.1" 500 202848
+127.0.0.1 - - [23/Apr/2018:10:09:03 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:10:09:18 +0700] "GET /recommend-today HTTP/1.1" 500 118517
+127.0.0.1 - - [23/Apr/2018:10:09:19 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:34:00 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [23/Apr/2018:16:34:00 +0700] "GET /bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:16:34:00 +0700] "GET /image.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:16:34:01 +0700] "GET /icon/css/open-iconic-bootstrap.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:16:34:02 +0700] "GET /css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:16:34:02 +0700] "GET /css/signin.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:16:34:03 +0700] "GET /materialize/js/materialize.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:16:34:03 +0700] "GET /materialize/css/materialize.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:16:34:03 +0700] "GET /bootstrap/js/bootstrap.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:16:34:03 +0700] "GET /icon/fonts/open-iconic.woff HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:16:34:03 +0700] "GET /favicon.ico HTTP/1.1" 304 -
+127.0.0.1 - - [23/Apr/2018:16:34:05 +0700] "GET /recommend-today HTTP/1.1" 500 118518
+127.0.0.1 - - [23/Apr/2018:16:34:18 +0700] "GET /recommend-today HTTP/1.1" 500 118508
+127.0.0.1 - - [23/Apr/2018:16:34:19 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:34:23 +0700] "GET /recommend-today HTTP/1.1" 500 100494
+127.0.0.1 - - [23/Apr/2018:16:34:23 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:34:38 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:16:34:38 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:16:34:57 +0700] "GET /recommend-today HTTP/1.1" 500 100500
+127.0.0.1 - - [23/Apr/2018:16:34:58 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:34:59 +0700] "GET /recommend-today HTTP/1.1" 500 204916
+127.0.0.1 - - [23/Apr/2018:16:34:59 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:35:19 +0700] "-" 408 -
+127.0.0.1 - - [23/Apr/2018:16:35:24 +0700] "GET /recommend-today HTTP/1.1" 500 204914
+127.0.0.1 - - [23/Apr/2018:16:35:25 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:35:26 +0700] "GET /recommend-today HTTP/1.1" 500 221473
+127.0.0.1 - - [23/Apr/2018:16:35:27 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:36:28 +0700] "GET /recommend-today HTTP/1.1" 500 221469
+127.0.0.1 - - [23/Apr/2018:16:36:29 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:36:30 +0700] "GET /recommend-today HTTP/1.1" 500 118513
+127.0.0.1 - - [23/Apr/2018:16:36:31 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:36:59 +0700] "GET /recommend-today HTTP/1.1" 500 118509
+127.0.0.1 - - [23/Apr/2018:16:36:59 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:37:06 +0700] "GET /recommend-today HTTP/1.1" 500 116405
+127.0.0.1 - - [23/Apr/2018:16:37:06 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:38:05 +0700] "GET /recommend-today HTTP/1.1" 500 116409
+127.0.0.1 - - [23/Apr/2018:16:38:06 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:38:08 +0700] "GET /recommend-today HTTP/1.1" 500 116394
+127.0.0.1 - - [23/Apr/2018:16:38:09 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:45:44 +0700] "GET /recommend-today HTTP/1.1" 500 116402
+127.0.0.1 - - [23/Apr/2018:16:45:44 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:45:48 +0700] "GET /recommend-today HTTP/1.1" 500 116407
+127.0.0.1 - - [23/Apr/2018:16:45:49 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:46:09 +0700] "GET /recommend-today HTTP/1.1" 500 116401
+127.0.0.1 - - [23/Apr/2018:16:46:09 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:46:10 +0700] "GET /recommend-today HTTP/1.1" 500 221179
+127.0.0.1 - - [23/Apr/2018:16:46:11 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:47:02 +0700] "GET /recommend-today HTTP/1.1" 500 221177
+127.0.0.1 - - [23/Apr/2018:16:47:03 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:47:05 +0700] "GET /recommend-today HTTP/1.1" 500 132341
+127.0.0.1 - - [23/Apr/2018:16:47:06 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:47:23 +0700] "GET /search_cv?keywords=php+laravel HTTP/1.1" 200 18670
+127.0.0.1 - - [23/Apr/2018:16:47:55 +0700] "GET /search_cv?keywords=php+laravel HTTP/1.1" 200 18670
+127.0.0.1 - - [23/Apr/2018:16:47:55 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:47:57 +0700] "GET /search_cv?keywords=php+laravel HTTP/1.1" 200 18664
+127.0.0.1 - - [23/Apr/2018:16:47:57 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [23/Apr/2018:16:48:08 +0700] "GET /recommend-today HTTP/1.1" 500 132339
+127.0.0.1 - - [23/Apr/2018:16:48:12 +0700] "GET /recommend-today HTTP/1.1" 500 132339
+127.0.0.1 - - [23/Apr/2018:16:48:13 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:20:49 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [24/Apr/2018:08:20:49 +0700] "GET /css/signin.css HTTP/1.1" 200 629
+127.0.0.1 - - [24/Apr/2018:08:20:49 +0700] "GET /bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140421
+127.0.0.1 - - [24/Apr/2018:08:20:49 +0700] "GET /image.jpg HTTP/1.1" 200 81539
+127.0.0.1 - - [24/Apr/2018:08:20:50 +0700] "GET /css/style.css HTTP/1.1" 200 1771
+127.0.0.1 - - [24/Apr/2018:08:20:50 +0700] "GET /materialize/css/materialize.min.css HTTP/1.1" 200 141312
+127.0.0.1 - - [24/Apr/2018:08:20:51 +0700] "GET /icon/css/open-iconic-bootstrap.css HTTP/1.1" 200 11396
+127.0.0.1 - - [24/Apr/2018:08:20:51 +0700] "GET /materialize/js/materialize.min.js HTTP/1.1" 200 179180
+127.0.0.1 - - [24/Apr/2018:08:20:51 +0700] "GET /icon/fonts/open-iconic.woff HTTP/1.1" 200 14984
+127.0.0.1 - - [24/Apr/2018:08:20:51 +0700] "GET /bootstrap/js/bootstrap.min.js HTTP/1.1" 200 50676
+127.0.0.1 - - [24/Apr/2018:08:20:51 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:20:56 +0700] "GET /logout HTTP/1.1" 302 360
+127.0.0.1 - - [24/Apr/2018:08:20:56 +0700] "GET /login HTTP/1.1" 200 2776
+127.0.0.1 - - [24/Apr/2018:08:21:01 +0700] "POST /login HTTP/1.1" 302 336
+127.0.0.1 - - [24/Apr/2018:08:21:01 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [24/Apr/2018:08:21:03 +0700] "GET /profile_cv HTTP/1.1" 500 201031
+127.0.0.1 - - [24/Apr/2018:08:21:16 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:21:16 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:21:16 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:21:16 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:21:16 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:21:27 +0700] "GET /profile_job HTTP/1.1" 500 134536
+127.0.0.1 - - [24/Apr/2018:08:22:25 +0700] "GET /profile_job HTTP/1.1" 200 30383
+127.0.0.1 - - [24/Apr/2018:08:22:26 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:22:45 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:22:45 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:22:45 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:22:45 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:22:45 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:22:58 +0700] "GET /profile_job HTTP/1.1" 200 30520
+127.0.0.1 - - [24/Apr/2018:08:22:58 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:23:35 +0700] "GET /profile_job HTTP/1.1" 200 23733
+127.0.0.1 - - [24/Apr/2018:08:23:36 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:23:55 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:23:55 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:23:55 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:24:04 +0700] "GET /profile_job HTTP/1.1" 200 23909
+127.0.0.1 - - [24/Apr/2018:08:24:05 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:24:07 +0700] "GET /profile_job HTTP/1.1" 200 23909
+127.0.0.1 - - [24/Apr/2018:08:24:07 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:24:09 +0700] "GET /profile_cv HTTP/1.1" 200 35092
+127.0.0.1 - - [24/Apr/2018:08:24:24 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:24:24 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:24:46 +0700] "GET /profile_cv HTTP/1.1" 200 35058
+127.0.0.1 - - [24/Apr/2018:08:24:46 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:24:49 +0700] "GET /profile_cv HTTP/1.1" 200 35058
+127.0.0.1 - - [24/Apr/2018:08:24:49 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:25:00 +0700] "GET /profile_cv HTTP/1.1" 200 40888
+127.0.0.1 - - [24/Apr/2018:08:25:01 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:25:15 +0700] "GET /profile_cv HTTP/1.1" 200 37394
+127.0.0.1 - - [24/Apr/2018:08:25:16 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:25:34 +0700] "GET /profile_cv HTTP/1.1" 200 37394
+127.0.0.1 - - [24/Apr/2018:08:25:34 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:25:36 +0700] "GET /profile_cv HTTP/1.1" 200 37394
+127.0.0.1 - - [24/Apr/2018:08:25:36 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:26:32 +0700] "GET /profile_cv HTTP/1.1" 200 40737
+127.0.0.1 - - [24/Apr/2018:08:26:32 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:27:15 +0700] "GET /profile_job HTTP/1.1" 200 20447
+127.0.0.1 - - [24/Apr/2018:08:27:23 +0700] "GET /profile_cv HTTP/1.1" 200 40737
+127.0.0.1 - - [24/Apr/2018:08:27:23 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:27:48 +0700] "GET /profile_job HTTP/1.1" 200 20447
+127.0.0.1 - - [24/Apr/2018:08:27:50 +0700] "GET /profile_cv HTTP/1.1" 200 40737
+127.0.0.1 - - [24/Apr/2018:08:27:51 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:28:07 +0700] "GET /profile_cv HTTP/1.1" 200 40888
+127.0.0.1 - - [24/Apr/2018:08:28:08 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:28:09 +0700] "GET /profile_cv HTTP/1.1" 200 40888
+127.0.0.1 - - [24/Apr/2018:08:28:09 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:28:24 +0700] "GET /profile_cv HTTP/1.1" 200 38130
+127.0.0.1 - - [24/Apr/2018:08:28:25 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:29:55 +0700] "GET /recommend-today HTTP/1.1" 500 31148
+127.0.0.1 - - [24/Apr/2018:08:30:32 +0700] "GET /profile_cv HTTP/1.1" 200 37394
+127.0.0.1 - - [24/Apr/2018:08:30:33 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:30:52 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:32:50 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [24/Apr/2018:08:33:01 +0700] "GET /search_cv?keywords=assistant HTTP/1.1" 200 18561
+127.0.0.1 - - [24/Apr/2018:08:33:13 +0700] "GET /search_cv?keywords=bartender HTTP/1.1" 200 18299
+127.0.0.1 - - [24/Apr/2018:08:33:16 +0700] "GET /recommend-today HTTP/1.1" 500 66613
+127.0.0.1 - - [24/Apr/2018:08:33:29 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:08:42:30 +0700] "GET /profile_job HTTP/1.1" 200 23909
+127.0.0.1 - - [24/Apr/2018:08:42:30 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:42:48 +0700] "GET /profile_job HTTP/1.1" 200 19451
+127.0.0.1 - - [24/Apr/2018:08:42:49 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:43:06 +0700] "GET /search_job?keywords=php+developer+laravel HTTP/1.1" 200 31758
+127.0.0.1 - - [24/Apr/2018:08:43:16 +0700] "GET /recommend-today HTTP/1.1" 500 102547
+127.0.0.1 - - [24/Apr/2018:08:43:16 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:57:10 +0700] "GET /profile_job HTTP/1.1" 500 117795
+127.0.0.1 - - [24/Apr/2018:08:57:11 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:08:57:38 +0700] "GET /profile_job HTTP/1.1" 500 142344
+127.0.0.1 - - [24/Apr/2018:08:57:38 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:09:17:16 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [24/Apr/2018:09:17:20 +0700] "GET /search_cv?keywords=developper HTTP/1.1" 200 3849
+127.0.0.1 - - [24/Apr/2018:09:17:23 +0700] "GET /search_cv?keywords=developper HTTP/1.1" 200 3849
+127.0.0.1 - - [24/Apr/2018:09:17:24 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:09:17:31 +0700] "GET /search_cv?keywords=developer HTTP/1.1" 200 18856
+127.0.0.1 - - [24/Apr/2018:09:17:49 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:09:25:26 +0700] "GET /profile_cv HTTP/1.1" 500 231474
+127.0.0.1 - - [24/Apr/2018:09:25:34 +0700] "GET / HTTP/1.1" 200 5349
+127.0.0.1 - - [24/Apr/2018:09:25:50 +0700] "-" 408 -
+127.0.0.1 - - [24/Apr/2018:09:26:49 +0700] "GET /search_cv?keywords=php+developer HTTP/1.1" 200 18835
+127.0.0.1 - - [24/Apr/2018:09:26:51 +0700] "GET /recommend-today HTTP/1.1" 500 137451
+127.0.0.1 - - [24/Apr/2018:09:27:46 +0700] "GET /recommend-today HTTP/1.1" 500 137449
+127.0.0.1 - - [24/Apr/2018:09:27:47 +0700] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [24/Apr/2018:09:33:42 +0700] "GET /recommend-today HTTP/1.1" 500 137451
+127.0.0.1 - - [24/Apr/2018:09:33:43 +0700] "GET /favicon.ico HTTP/1.1" 200 -

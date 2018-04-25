@@ -34,7 +34,8 @@ class UserInteractController extends Controller
     public function postLogin(Request $request)
     {
         $params = $request->all();
-        if (Auth::attempt(["name" => $params["name"], "password" => $params["password"]],$params["remember"])) {
+        $remember = !empty($params["remember"])?true:false;
+        if (Auth::attempt(["name" => $params["name"], "password" => $params["password"]],$remember)) {
             return redirect(route('homepage'));
         } else {
             return redirect()->back();
@@ -47,7 +48,7 @@ class UserInteractController extends Controller
         $my_id = Members::findorFail(Auth::id())->toArray();
         $my_cv = CV::findorFail($my_id["cv_id"])->toArray();
 
-        $list_recommend_job = $this->recommend->searchMatchingSimilarity($my_id["cv_id"],"cv","job", 4);
+        $list_recommend_job = $this->recommend->searchMatchingSimilarity($my_id["cv_id"],"cv","job", 8);
 
         return view('profile.profile_cv',compact('my_cv','list_recommend_job'));
 
@@ -58,7 +59,7 @@ class UserInteractController extends Controller
         $my_id = Members::findorFail(Auth::id())->toArray();
         $my_job = Job::findorFail($my_id["job_id"])->toArray();
 
-        $list_recommend_cv = $this->recommend->searchMatchingSimilarity($my_id["job_id"],"job","cv", 4);
+        $list_recommend_cv = $this->recommend->searchMatchingSimilarity($my_id["job_id"],"job","cv", 8);
 
         return view('profile.profile_job',compact('my_job','list_recommend_cv'));
     }
@@ -106,11 +107,11 @@ class UserInteractController extends Controller
 
 
         if(!empty($my_id["interact_cv"])){
-            $list_recommend_cv = $this->recommend->searchMatchingSimilarity($my_id["interact_cv"],"cv","cv",10);
+            $list_recommend_cv = $this->recommend->searchMatchingSimilarity($my_id["interact_cv"],"cv","cv",10,1);
         }
 
         if(!empty($my_id["interact_job"])) {
-            $list_recommend_job = $this->recommend->searchMatchingSimilarity($my_id["interact_job"],"job","job",10);
+            $list_recommend_job = $this->recommend->searchMatchingSimilarity($my_id["interact_job"],"job","job",10,1);
         }
 
         dd($list_recommend_job,$list_recommend_cv);
