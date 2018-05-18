@@ -4,8 +4,12 @@ namespace App\Http\Controllers;
 
 use App\CV;
 use App\Job;
+use App\User;
 use Illuminate\Http\Request;
 use Elasticsearch\ClientBuilder;
+use MathPHP\LinearAlgebra\Matrix;
+use MathPHP\LinearAlgebra\MatrixFactory;
+
 
 class CrawlController extends Controller
 {
@@ -17,100 +21,110 @@ class CrawlController extends Controller
     {
         $client = ClientBuilder::create()->build();
 
-        dd(1);
 
-        $temp_data = CV::all()->toArray();
-        $temp_string = "";
-        $data = [];
-        foreach ($temp_data as $cv) {
-            $cv["workExperience"] = json_decode($cv["workExperience"],true);
-            foreach($cv["workExperience"] as $item) {
-                $temp_string .= $item["title"]." ".$item["company"]." ,";
-            }
-            $cv["workExperience"] = $temp_string;
-            $temp_string = "";
-
-
-            $cv["education"] = json_decode($cv["education"],true);
-            foreach($cv["education"] as $item) {
-                $temp_string .= $item["degree"]." ".$item["university"]." ,";
-            }
-            $cv["education"] = $temp_string;
-            $temp_string = "";
-
-
-            $cv["skills"] = json_decode($cv["skills"],true);
-            foreach($cv["skills"] as $item) {
-                $year = $item["monthsOfExperience"]/12 < 1? $item["monthsOfExperience"]." months " : $item["monthsOfExperience"]/12 ." years ";
-                $temp_string .= $item["skill"]." ".$year." ,";
-            }
-            $cv["skills"] = $temp_string;
-            $temp_string = "";
-
-
-
-            $cv["awards"] = json_decode($cv["awards"],true);
-            foreach($cv["awards"] as $item) {
-                $temp_string .= $item["title"]." ".$item["description"]." ,";
-            }
-            $cv["awards"] = $temp_string;
-            $temp_string = "";
-
-            $cv["certifications"] = json_decode($cv["certifications"],true);
-            foreach($cv["certifications"] as $item) {
-                $temp_string .= $item["title"]." ".$item["description"]." ,";
-            }
-            $cv["certifications"] = $temp_string;
-            $temp_string = "";
-
-
-            $cv["groups"] = json_decode($cv["groups"],true);
-            foreach($cv["groups"] as $item) {
-                $temp_string .= $item["title"]." ".$item["description"]." ,";
-            }
-            $cv["groups"] = $temp_string;
-            $temp_string = "";
-
-            $cv["cv"] = $cv["fullname"]." ".$cv["location"]." ".$cv["summary"]." ".$cv["workExperience"]." ".$cv["education"]." ".$cv["skills"];
-
-
-            unset($cv["links"],$cv["militaryService"],$cv["patents"],$cv["publications"],$cv["created_at"],$cv["updated_at"]);
-            $data[] = $cv;
-        }
-
-
-
-
-        //Clean index
-        foreach ($data as $item) {
-            $params = [
-                'index' => 'cv',
-                'type' => 'cv',
-                'body' => $item,
-
-            ];
-            $client->index($params);
-        }
+//        $temp_data = CV::all()->toArray();
+//        $temp_string = "";
+//        $data = [];
+//        foreach ($temp_data as $cv) {
+//            $cv["workExperience"] = json_decode($cv["workExperience"],true);
+//            foreach($cv["workExperience"] as $item) {
+//                $temp_string .= $item["title"]." ".$item["company"]." ,";
+//            }
+//            $cv["workExperience"] = $temp_string;
+//            $temp_string = "";
+//
+//
+//            $cv["education"] = json_decode($cv["education"],true);
+//            foreach($cv["education"] as $item) {
+//                $temp_string .= $item["degree"]." ".$item["university"]." ,";
+//            }
+//            $cv["education"] = $temp_string;
+//            $temp_string = "";
+//
+//
+//            $cv["skills"] = json_decode($cv["skills"],true);
+//            foreach($cv["skills"] as $item) {
+//                $year = $item["monthsOfExperience"]/12 < 1? $item["monthsOfExperience"]." months " : $item["monthsOfExperience"]/12 ." years ";
+//                $temp_string .= $item["skill"]." ".$year." ,";
+//            }
+//            $cv["skills"] = $temp_string;
+//            $temp_string = "";
+//
+//
+//
+//            $cv["awards"] = json_decode($cv["awards"],true);
+//            foreach($cv["awards"] as $item) {
+//                $temp_string .= $item["title"]." ".$item["description"]." ,";
+//            }
+//            $cv["awards"] = $temp_string;
+//            $temp_string = "";
+//
+//            $cv["certifications"] = json_decode($cv["certifications"],true);
+//            foreach($cv["certifications"] as $item) {
+//                $temp_string .= $item["title"]." ".$item["description"]." ,";
+//            }
+//            $cv["certifications"] = $temp_string;
+//            $temp_string = "";
+//
+//
+//            $cv["groups"] = json_decode($cv["groups"],true);
+//            foreach($cv["groups"] as $item) {
+//                $temp_string .= $item["title"]." ".$item["description"]." ,";
+//            }
+//            $cv["groups"] = $temp_string;
+//            $temp_string = "";
+//
+//            $cv["cv"] = $cv["fullname"]." ".$cv["location"]." ".$cv["summary"]." ".$cv["workExperience"]." ".$cv["education"]." ".$cv["skills"];
+//
+//
+//            unset($cv["links"],$cv["militaryService"],$cv["patents"],$cv["publications"],$cv["created_at"],$cv["updated_at"]);
+//            $data[] = $cv;
+//        }
+//
+//
+//
+//
+//        //Clean index
+//        foreach ($data as $item) {
+//            $params = [
+//                'index' => 'cv',
+//                'type' => 'cv',
+//                'body' => $item,
+//
+//            ];
+//            $client->index($params);
+//        }
 
 
 //        $data = Job::where('id','>','986')->get()->toArray();
-//
-//        foreach ($data as $key=>$line) {
-//
-//            //Index document
+        $data = json_decode(file_get_contents("job.geojson"),true);
+
+        foreach ($data["features"] as $key=>$line) {
+
+            $temp = Job::create([
+                "title" => $line["properties"]["Tittle"],
+                "description" => $line["properties"]["JobDescription"],
+                "requirement" => $line["properties"]["JobRequirment"]
+            ]);
+
+
+
+            //Index document
 //            $params = [
 //                'index' => 'job',
 //                'type' => 'job',
 //                'body' => [
-//                    'id' => $line["id"],
-//                    'title' => $line['title'],
-//                    'description' => $line['description']
+//                    'id' => $temp["id"],
+//                    'title' => $temp['title'],
+//                    'description' => $temp['description'],
+//                    'requirement' => $temp['requirement']
 //                ]
 //            ];
 //
 //            $client->index($params);
-//        }
+        }
 
+        dd(1123124);
         $params = [
             "size" => 1000,
             "index" => "cv",
@@ -216,6 +230,61 @@ class CrawlController extends Controller
     }
 
 
+    public function updateSettingIndex()
+    {
+        $client = ClientBuilder::create()->build();
+
+        $params = [
+            "index" => "job",
+            "body" => [
+                "settings" => [
+                    "analysis" => [
+                        "analyzer" => [
+                            "my_analyzer" => [
+                                "type" => "custom",
+                                "filter" => ["lowercase","synonym",'stop', 'kstem'],
+                                "tokenizer" => "my_tokenizer",
+                                "stopwords" => "_english_"
+                            ],
+
+                        ],
+                        "tokenizer" => [
+                            "my_tokenizer" => [
+                                "type" => "keyword",
+                                "text" => ["back end","front end","back-end","front-end"]
+                            ]
+                        ],
+                        "filter" => [
+                            "synonym" => [
+                                "type" => "synonym",
+                                "synonyms" => [
+                                    "back-end, backend => back end",
+                                    "front-end, frontend => front end",
+                                    "web developer, php developer, python developer"
+                                ]
+
+                            ]
+                        ]
+
+
+                    ]
+                ]
+            ]
+        ];
+
+        dd($client->indices()->putSettings($params));
+    }
+
+    public function getSettingIndex()
+    {
+        $client = ClientBuilder::create()->build();
+        $params = [
+          "index" => "job",
+
+        ];
+        dd($client->indices()->getSettings($params));
+
+    }
     /**
      *
      */
@@ -419,6 +488,37 @@ class CrawlController extends Controller
         }
     }
 
+
+    public function test()
+    {
+        $number_jobs = Job::all()->count();
+        $number_cv = CV::all()->count();
+
+        $number_members = User::all()->count();
+
+
+//        $matrix_cv = [];
+//        $matrix_job = [];
+//
+//
+//        for($i = 0; $i<$number_members; $i++) {
+//            $row = array_fill(0,$number_cv,0);
+//            $matrix_cv[] = $row;
+//
+//            $row = array_fill(0,$number_jobs,0);
+//            $matrix_job[] = $row;
+//        }
+//
+//        file_put_contents("matrix_job",json_encode($matrix_job));
+//        file_put_contents("matrix_cv",json_encode($matrix_cv));
+
+//        $members = User::all();
+//
+//        for ($i=0; $i<$number_members; $i++) {
+//            $members[$i]->position_matrix = $i;
+//            $members[$i]->save();
+//        }
+    }
 
 
 

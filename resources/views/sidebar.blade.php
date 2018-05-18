@@ -1,7 +1,7 @@
 <div class="profile-sidebar sidenav sidenav-fixed">
     <!-- SIDEBAR USERPIC -->
     <div class="profile-userpic">
-        <img src="{{asset('/image.jpg')}}" class="img-responsive" alt="">
+        <img src="{{asset('/test.jpg')}}" class="img-responsive" alt="">
     </div>
     <!-- END SIDEBAR USERPIC -->
     <!-- SIDEBAR USER TITLE -->

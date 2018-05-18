@@ -281,8 +281,8 @@ class RecommendationController extends Controller
             $boost_1 = 1;
             $boost_2 = 1;
             if ($to == $from) {
-                $boost_1 = 1.5;
-                $boost_2 = 1.2;
+//                $boost_1 = 1.5;
+//                $boost_2 = 1.2;
             }
 
             if ($to=="job") {
@@ -367,7 +367,6 @@ class RecommendationController extends Controller
             $own_vc_vector = $this->calculateScoreVer2($own_score,$boost_score_ownVector);
         }
 
-//        dd($from_value,$vectors["42Sg3mIBJ81XLRnFR-1y"],$vectors[$from_value["_id"]],$this->calculateScoreVer2($own_score,$boost_score_ownVector),$own_score, $handleTermVector);
 
         $result = [];
         $from_vector = new Vector($own_vc_vector);
@@ -424,6 +423,7 @@ class RecommendationController extends Controller
         $params_to = [
             'index' => $to,
             'type' => $to,
+            "size" => 50
         ];
 
 
@@ -433,11 +433,31 @@ class RecommendationController extends Controller
                     "query" => [
                         "multi_match" => [
                             "query" => $keyword,
-                            "fields" => ["fullname^2","headline^2",'skills^2','wordExperience']
+                            "type" =>   "cross_fields",
+                            "fields" => ["fullname^2","headline^1.5",'skills^1.2','wordExperience'],
+                            "operator" =>  "and",
+                            "analyzer" => "standard"
+//                            "fields" => ["fullname","headline",'skills','wordExperience']
+
+
                         ]
 
                     ]
                 ]
+//                "body" => [
+//                    "query" => [
+//                        "match" => [
+//                            "message" => [
+//                                "query" => $keyword,
+//                                "operator" => "or",
+////                                "fields" => ["fullname^2","headline^1.5",'skills^1.2','wordExperience'],
+//                                "analyzer" => "my_analyzer"
+//                            ]
+//                        ]
+//
+//
+//                    ]
+//                ]
             ]);
 
         } else {
@@ -446,16 +466,21 @@ class RecommendationController extends Controller
                     "query" => [
                         "multi_match" => [
                             "query" => $keyword,
-                            "fields" => ["title^3","description"]
+                            "type" => "cross_fields",
+                            "fields" => ["title^1.3","description"],
+                            "operator" =>  "and",
+                            "analyzer" => "standard"
                         ]
 
                     ]
                 ]
+
             ]);
         }
 
         $result = $this->client->search($params_search_to);
 
+//        dd($result);
         return $result["hits"];
     }
 

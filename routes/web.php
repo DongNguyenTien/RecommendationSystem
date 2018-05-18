@@ -23,6 +23,10 @@ Route::get('/create-index','CrawlController@createIndex');
 Route::get('/clear-data-index','CrawlController@clearDataInIndex');
 Route::get('/setting-index','CrawlController@putSettingIndex');
 Route::get('/mapping-index','CrawlController@putMappingIndex');
+Route::get('/update-setting-index','CrawlController@updateSettingIndex');
+Route::get('/get-setting-index','CrawlController@getSettingIndex');
+
+
 
 Route::get('/crawl-job', 'CrawlController@crawlJob');
 Route::get('/crawl-CV','CrawlController@crawlCV');
@@ -44,7 +48,12 @@ Route::group(['middleware'=>['web','auth']],function(){
     Route::get('/search_cv','UserInteractController@searchCV')->name('search_cv');
     Route::get('/search_job','UserInteractController@searchJob')->name('search_job');
 
+    Route::get('/cv/{id}','UserInteractController@interactCV')->name("info_cv");
+    Route::get('/job/{id}','UserInteractController@interactJob')->name("info_job");
+
     Route::get('/recommend-today','UserInteractController@recommendToday')->name('recommendToday');
 
 });
 
+
+Route::get('/test','CrawlController@test');
